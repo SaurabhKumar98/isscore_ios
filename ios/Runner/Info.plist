@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+  <!-- App Basic Info -->
+  <key>CFBundleDevelopmentRegion</key>
+  <string>$(DEVELOPMENT_LANGUAGE)</string>
+  <key>CFBundleDisplayName</key>
+  <string>Firstedu</string>
+  <key>CFBundleExecutable</key>
+  <string>$(EXECUTABLE_NAME)</string>
+  <key>CFBundleIdentifier</key>
+  <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+  <key>CFBundleName</key>
+  <string>firstedu</string>
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+  <key>CFBundleShortVersionString</key>
+  <string>$(FLUTTER_BUILD_NAME)</string>
+  <key>CFBundleSignature</key>
+  <string>????</string>
+  <key>CFBundleVersion</key>
+  <string>$(FLUTTER_BUILD_NUMBER)</string>
+
+  <!-- URL Schemes (Razorpay deep link) -->
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleTypeRole</key>
+      <string>Editor</string>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>rzp</string>
+      </array>
+    </dict>
+  </array>
+
+  <!-- Device Support -->
+  <key>LSRequiresIPhoneOS</key>
+  <true/>
+
+  <!-- Apps this app can open (Razorpay UPI + url_launcher) -->
+  <key>LSApplicationQueriesSchemes</key>
+  <array>
+    <string>upi</string>
+    <string>phonepe</string>
+    <string>gpay</string>
+    <string>paytmmp</string>
+    <string>bhim</string>
+    <string>https</string>
+    <string>http</string>
+    <string>tel</string>
+    <string>mailto</string>
+  </array>
+
+  <!-- File sharing (file_picker + open_file) -->
+  <key>UIFileSharingEnabled</key>
+  <true/>
+  <key>LSSupportsOpeningDocumentsInPlace</key>
+  <true/>
+
+  <!-- UI -->
+  <key>UILaunchStoryboardName</key>
+  <string>LaunchScreen</string>
+  <key>UIMainStoryboardFile</key>
+  <string>Main</string>
+
+  <key>UISupportedInterfaceOrientations</key>
+  <array>
+    <string>UIInterfaceOrientationPortrait</string>
+    <string>UIInterfaceOrientationLandscapeLeft</string>
+    <string>UIInterfaceOrientationLandscapeRight</string>
+  </array>
+
+  <key>UISupportedInterfaceOrientations~ipad</key>
+  <array>
+    <string>UIInterfaceOrientationPortrait</string>
+    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+    <string>UIInterfaceOrientationLandscapeLeft</string>
+    <string>UIInterfaceOrientationLandscapeRight</string>
+  </array>
+
+  <key>CADisableMinimumFrameDurationOnPhone</key>
+  <true/>
+  <key>UIApplicationSupportsIndirectInputEvents</key>
+  <true/>
+
+  <!-- CAMERA (image_picker, image_cropper, agora_rtc_engine) -->
+  <key>NSCameraUsageDescription</key>
+  <string>This app requires camera access for video calls and capturing images.</string>
+
+  <!-- MICROPHONE (agora_rtc_engine, audioplayers) -->
+  <key>NSMicrophoneUsageDescription</key>
+  <string>This app requires microphone access for audio and video calls.</string>
+
+  <!-- PHOTOS (image_picker, image_cropper) -->
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>This app needs access to your photos to upload images.</string>
+  <key>NSPhotoLibraryAddUsageDescription</key>
+  <string>This app needs permission to save images to your gallery.</string>
+
+  <!-- BLUETOOTH (agora_rtc_engine — audio routing via BT headsets) -->
+  <key>NSBluetoothAlwaysUsageDescription</key>
+  <string>This app uses Bluetooth for audio routing during calls.</string>
+  <key>NSBluetoothPeripheralUsageDescription</key>
+  <string>This app uses Bluetooth for audio routing during calls.</string>
+
+  <!-- LOCAL NETWORK (socket_io_client, web_socket_channel, agora) -->
+  <key>NSLocalNetworkUsageDescription</key>
+  <string>This app uses the local network for real-time communication features.</string>
+  <key>NSBonjourServices</key>
+  <array>
+    <string>_dartobservatory._tcp</string>
+  </array>
+
+  <!-- NETWORK (remove NSAllowsArbitraryLoads before App Store submission) -->
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+  </dict>
+
+  <!-- PUSH NOTIFICATIONS (firebase_messaging) -->
+  <key>FirebaseAppDelegateProxyEnabled</key>
+  <false/>
+
+  <!-- BACKGROUND MODES -->
+  <key>UIBackgroundModes</key>
+  <array>
+    <string>remote-notification</string>
+    <string>fetch</string>
+    <string>audio</string>
+    <string>voip</string>
+  </array>
+
+</dict>
+</plist>

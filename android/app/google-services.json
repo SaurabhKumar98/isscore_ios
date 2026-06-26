@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "435569350567",
+    "project_id": "iscorre",
+    "storage_bucket": "iscorre.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435569350567:android:3727ac90dcb48f8ba80882",
+        "android_client_info": {
+          "package_name": "com.firstedu.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy7sGTjW_GuoKiRP86Z7c4rvyurv-zUHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
