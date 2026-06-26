@@ -91,9 +91,6 @@ Future<LoginModel> login({
             : "Login failed. Please check your credentials and try again.",
       );
     }
-
-    // ✅ SKIP token check if already logged in elsewhere
-    // (that response has no token — it only shows the dialog)
     final isAlreadyElsewhere =
         loginModel.loginPayload?.alreadyLoggedInElsewhere == true;
 
